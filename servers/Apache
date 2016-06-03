@@ -1,0 +1,34 @@
+******
+Apache
+******
+
+Apache comes built in to Linux & MacOSX, but not all of the installations 
+have PHP7 integrated.
+
+AMP stacks with PHP7
+--------------------
+
+-   https://bitnami.com/stacks/infrastructure (choose WAMP, MAMP or LAMP link to start)
+
+Tips
+----
+
+Installing this gives you an Apache web server with PHP7 integrated, into a
+folder appropriate to your platform, for instance /opt/lampstack-7.0.0-0/
+
+Configure Apache appropriately ... LAMPSTACK/apache2/conf
+
+Virtual Hosting
+---------------
+
+Virtual hosting will let you run multiple webapps each as their own subdomain.
+
+In /etc/hosts, add entries for each virtual host, forinstance **127.0.0.1 ci4.local**
+
+Edit LAMPSTACK/apache2/conf/httpd.conf -> enable virtual hosting.
+
+Edit LAMPSTACK/apache2/conf/extra/httpd-vhost.conf -> provide a mapping for
+the subdomain you setup (ci4.local) to the folder where you installed
+CodeIgniter4, eg. MYSTUFF/CodeIgniter4/public
+
+

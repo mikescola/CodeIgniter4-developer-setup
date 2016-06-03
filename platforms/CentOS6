@@ -1,0 +1,37 @@
+*******
+CentOS6
+*******
+
+CentOS6 comes with an AMP stack built in: Apache 2.x, MySQL 5.x and PHP 5.x
+
+PHP7 needs to be installed separately.
+
+Sources
+-------
+
+-   https://www.centos.org/
+
+PHP7
+----
+
+-   https://bitnami.com/stack/lamp
+-   https://bitnami.com/redirect/to/109149/bitnami-lampstack-7.0.7-0-dev-linux-x64-installer.run
+
+This will be installed in /opt/lampstack-7.0.0-0
+
+Tips
+----
+
+Installing this gives you a PHP7 environment in addition to the version of PHP
+installed as part of your base platform.
+
+Configure Apache here to use a different port than that used by your platform
+default.
+
+Configure your IDE to use the PHP executable from within lampstack-7.0.0-0
+
+From a command prompt, you can **sh /opt/lampstack-7.0.0-0/use_lampstack**
+to switch to a bash shell with PHP7 the default PHP version.
+
+You *can* run CI4 at this point by **php -s localhost:8888 MYPROJECT/public/index.php**.
+You'll probably want to user a server instead.

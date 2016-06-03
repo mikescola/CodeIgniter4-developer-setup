@@ -1,0 +1,6 @@
+*******
+Vagrant
+*******
+
+Vagrant is one of the VM and container managers that can be used
+to isolate your CodeIgniter4 project for development and testing.
